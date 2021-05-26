@@ -1,6 +1,6 @@
 # VerthashMiner_Automated
 This is one of my first projects. Thanks to the Vertcoin Community for providing VerthashMiner. This intends to simplify the setup while allowing advanced logging with the VHM.
-
+The Binary is copied from CryptoGraphics's Verthashminer. If you prefer to download it manually, the link is here: https://github.com/CryptoGraphics/VerthashMiner
 Requires Python 3.5+ to run. Thanks!
 
 Donations are greatly appreciated! 
