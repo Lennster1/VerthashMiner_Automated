@@ -26,3 +26,4 @@ else:
     myBat = open(r'work.bat','w+')
 myBat.write('VerthashMiner -u VpEySNp1Sd9b6ghFkB1rZbmavtxJ5RjxAt.butt -p x -o stratum+tcp://mining.hashalot.net:3950 --verthash-data verthash.dat --all-cu-devices')
 myBat.close()
+
