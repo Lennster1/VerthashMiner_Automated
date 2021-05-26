@@ -1,1 +1,0 @@
-VerthashMiner.exe --gen-verthash-data verthash.dat
