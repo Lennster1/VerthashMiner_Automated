@@ -1,2 +1,13 @@
 # VerthashMiner_Automated
 This is one of my first projects. Thanks to the Vertcoin Community for providing VerthashMiner. This intends to simplify the setup while allowing advanced logging with the VHM.
+
+Requires Python 3.5+ to run. Thanks!
+
+Donations are greatly appreciated! 
+
+BTC: bc1qxngnpj42e2d0j6ej5fjpwa454kwxmlvk6kzxkg
+BCH: qp6tj8pd4cplx0j72pzhkngekez7td7ra56ztgk335
+ETH: 0x31cCb92e6bc1AD1b290021abe9a0D77a45d08E9C
+BSC Tokens: 0x7042742380C550c8639588F607FEa2A77BF36FFD
+VTC: vtc1qatxdchtp4zvulqp9sgwer5w06yawjlpycrnajz
+
