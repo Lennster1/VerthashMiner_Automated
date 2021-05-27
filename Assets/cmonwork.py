@@ -2,7 +2,10 @@ import subprocess
 import dotenv
 from pathlib import Path
 
-
+if Path('your_config_file.conf').is_file():
+    confExists = 'True'
+else:
+    confExists = 'False'
 if Path('verthash.dat').is_file():
     Verthashdat = 'True'
 else:
@@ -24,6 +27,6 @@ if batExists == 'True':
     subprocess.call([r'work.bat'])
 else:
     myBat = open(r'work.bat','w+')
-myBat.write('VerthashMiner -u VpEySNp1Sd9b6ghFkB1rZbmavtxJ5RjxAt.butt -p x -o stratum+tcp://mining.hashalot.net:3950 --verthash-data verthash.dat --all-cu-devices')
+myBat.write('Verthashminer -c your_config_file.conf+')
 myBat.close()
 
