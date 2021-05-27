@@ -4,6 +4,7 @@ The Binary is copied from CryptoGraphics's Verthashminer. If you prefer to downl
 Requires Python 3.5+ to run. Thanks!
 If separate windows open during running, this is normal.
 Vertcoin requires a Verthash.dat file to mine. If it is not present, it will automaticly create it. This file is around 1.2 GB, so it may take a while.
+If anyone would like to collab, you can fork it or make a pull request! And pls report bugs in issues.
 Donations are greatly appreciated! 
 
 BTC: bc1qxngnpj42e2d0j6ej5fjpwa454kwxmlvk6kzxkg <br>
