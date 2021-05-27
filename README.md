@@ -2,7 +2,7 @@
 This is one of my first projects. Thanks to the Vertcoin Community for providing VerthashMiner. This intends to simplify the setup while allowing advanced logging with the VHM. Just open the .exe file and start running! If there is an error, try exculding it in your Antivirus, as all miners are flagged by most software.
 The Binaries and cl files are copied from CryptoGraphics's Verthashminer. If you prefer to download it manually, the link is here: https://github.com/CryptoGraphics/VerthashMiner  
 Requires Python 3.5+ to run. Thanks!
-If separate windows open during running, this is normal.
+Separate windows open during running, this is normal.
 Vertcoin requires a Verthash.dat file to mine. If it is not present, it will automaticly create it. This file is around 1.2 GB, so it may take a while.
 If anyone would like to collab, you can fork it or make a pull request! And pls report bugs in issues.  
 Donations are greatly appreciated! 
