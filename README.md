@@ -1,4 +1,5 @@
 # VerthashMiner_Automated
+
 This is one of my first projects. Thanks to the Vertcoin Community for providing VerthashMiner. This intends to simplify the setup while allowing advanced logging with the VHM. Just open the .exe file and start running! If there is an error, try exculding it in your Antivirus, as all miners are flagged by most software.
 The Binaries and cl files are copied from CryptoGraphics's Verthashminer. If you prefer to download it manually, the link is here: https://github.com/CryptoGraphics/VerthashMiner  
 Separate windows open during running, this is normal.
