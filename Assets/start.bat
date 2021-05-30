@@ -1,1 +1,1 @@
-start cmonwork.bat
+py cmonwork.py
