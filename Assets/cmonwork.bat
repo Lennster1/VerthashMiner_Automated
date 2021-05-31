@@ -13,8 +13,10 @@ If %Verthashdat%==False (
     echo Verthash.dat does not Exist! 
     start generate_vtc_dat.bat
 )
-set /P walletAdress=What is your wallet adress?:
-(echo
+If %batExists%==True (
+    start work.bat
+) else (
+    set /P walletAdress=What is your wallet adress?:
+    (echo
 VerthashMiner -u %walletAdress% -p x -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat --all-cl-devices --all-cu-devices) >work.bat
-pause
-exit
+start work.bat
