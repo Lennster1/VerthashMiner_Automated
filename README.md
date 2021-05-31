@@ -7,7 +7,7 @@ Also, most antivirus programs flag mining software as malaware. This is normal, 
 **Special thanks to D1viry and @sylvesternumski for helping me debug problems.** <br>
 ## Instructions
 To run the program, simply unzip the folder provided and open start.exe. This will automatically start the program. It will prompt you for your wallet adress. <br>
-When you  enter it, it will automatically start hashing with the adress provided. If you want to see your statistics, go to `https://zergpool.com/?address=YOUR_ADRESS_HERE` and replace `YOUR_ADRESS_HERE` with the wallet adress you inputted into the program/
+When you  enter it, it will automatically start hashing with the adress provided. If you want to see your statistics, go to `https://zergpool.com/?address=YOUR_ADRESS_HERE` and replace `YOUR_ADRESS_HERE` with the wallet adress you inputted into the program. If you have any bugs, report them in issues.
 <br>
 <br>
 <br>
