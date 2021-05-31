@@ -1,23 +1,26 @@
 @echo off 
-If exist "verthash.dat" (
+ If exist "verthash.dat" (
     set Verthashdat=True
-) else (
+ ) else (
     set Verthashdat=False
-)
+ )
+
+ If %Verthashdat%==False (
+     echo Verthash.dat does not Exist! 
+    start generate_vtc_dat.bat
+ )
+
 If exist "work.bat" (
     set batExists=True
-) else (
+    ) else (
     set batExists=False
-)
-If %Verthashdat%==False (
-    echo Verthash.dat does not Exist! 
-    start generate_vtc_dat.bat
-)
-If %batExists%==False (
-    set /P walletAdress="What is your wallet adress?:"
-    echo (VerthashMiner -u %walletAdress% -p x -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat --all-cl-devices --all-cu-devices) >work.bat
+    )
+
+If %batExists%==True (
     start work.bat
-) else (
-    start work.bat
-)
-pause
+    EXIT /B
+    )
+
+set /P walletAdress=What is your wallet adress?:
+    echo VerthashMiner -u %walletAdress% -p x -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat --all-cl-devices --all-cu-devices>>work.bat 
+start work.bat
