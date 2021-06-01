@@ -1,5 +1,5 @@
 # VerthashMiner_Automated
-This program is simply a script that simplifies the expirience for mining Vertcoin. It will input the user for their wallet adress, will save it, and automatically start hashing. 
+This program is simply a script that simplifies the expirience for mining Vertcoin. It will input the user for their wallet adress, will save it, and automatically start hashing when you run the start.exe 
 ## Notes
 This is one of my first projects. A big thanks to the Vertcoin Community for allowing me to use the open source VerthashMiner, and thanks to @CryptoGraphics for coding it.  
 This program uses Verthashminer as the mining software. The binaries and CL files are copied directly from @CryptoGraphics's repository. If you prefer to download the binaries manually, the link is here: https://github.com/CryptoGraphics/VerthashMiner<br>
