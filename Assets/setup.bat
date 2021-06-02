@@ -1,4 +1,3 @@
-
 @ECHO OFF
 cls
 @setlocal enableextensions
