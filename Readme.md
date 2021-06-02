@@ -5,7 +5,7 @@ This is one of my first projects. A big thanks to the Vertcoin Community for all
 This program uses Verthashminer as the mining software. The binaries and CL files are copied directly from @CryptoGraphics's repository. If you prefer to download the binaries manually, the link is here: https://github.com/CryptoGraphics/VerthashMiner<br>
 Also, most antivirus programs flag mining software as malaware. This is normal, and simply add an expection in your AV software where the `Verthashminer_Automated` folder is.<br>
 **Special thanks to @D1viry and @sylvesternumski for helping me debug problems.** <br>
-You can see our roadmap here: https://github.com/Lennster1/VerthashMiner_Automated/projects/1 <be>
+You can see our roadmap here: https://github.com/Lennster1/VerthashMiner_Automated/projects/1 <br>
 This software is licensed under GNU General Public License v3.0
 
 ## Instructions
