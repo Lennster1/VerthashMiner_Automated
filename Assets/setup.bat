@@ -18,9 +18,7 @@ If %batExists%==True (
     start work.bat
     EXIT /B
     )
-If %verthash%==False (
-	echo Verthash.dat 
-)
+
 :README
 	cls
 	ECHO.
