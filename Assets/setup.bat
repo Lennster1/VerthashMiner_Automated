@@ -3,11 +3,19 @@ cls
 @setlocal enableextensions
 @cd /d "%~dp0"
 
-If exist "verthash.dat" (
-	set Verthashdat=True
-) else (
-	set Verthashdat=False
-)
+REM Checks whether verthash.dat exists in AppData\Vertcoin (if the user already have Vertcoin Core) or in current path.
+If exist "%AppData%\Vertcoin\verthash.dat" (
+    set Verthashdat=True
+    set VerthashPath="%AppData%\Vertcoin\verthash.dat"
+    echo Verthash file exists! %VerthashPath%
+ ) else if exist "verthash.dat" (
+    set Verthashdat=True
+    set VerthashPath="verthash.dat"
+    echo Verthash file exists!
+ ) else (
+    set Verthashdat=False
+ )
+
 If exist "work.bat" (
     set batExists=True
 ) else (
