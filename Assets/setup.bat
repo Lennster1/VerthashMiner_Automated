@@ -66,8 +66,8 @@ GOTO INVALID
 
 :ZERGPOOL
 
-set /P walletAdress=What is your wallet adress?:
-    echo Verthashminer -u %walletAdress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat all-cl-devices --all-cu-devices>work.bat
+set /P walletAddress=Please type, or enter your Vertcoin wallet address:
+    echo Verthashminer -u %walletAddress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat all-cl-devices --all-cu-devices>work.bat
     start work.bat
 	
 ECHO.
@@ -77,8 +77,8 @@ GOTO ENDFILE
 
 :HASHALOT
 
-set /P walletAdress=What is your wallet adress?:
-    echo VtcZerg -u %walletAdress% -p x -o s>work.bat
+set /P walletAddress=Please type, or enter your Vertcoin wallet address:
+    echo VtcZerg -u %walletAddress% -p x -o s>work.bat
 	start work.bat
 
 ECHO.
@@ -88,8 +88,8 @@ GOTO ENDFILE
 
 :SUPRNOVA
 
-set /P walletAdress=What is your wallet adress?:
-    echo VtcSupr -u %walletAdress% -p x -o s>work.bat
+set /P walletAddress=Please type, or enter your Vertcoin wallet address:
+    echo VtcSupr -u %walletAddress% -p x -o s>work.bat
 	start work.bat
 
 ECHO.
