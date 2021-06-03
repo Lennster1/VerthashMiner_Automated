@@ -66,7 +66,7 @@ GOTO INVALID
 
 :ZERGPOOL
 
-set /P walletAddress=Please type, or enter your Vertcoin wallet address:
+set /P walletAddress=Please type, or paste your Vertcoin wallet address:
     echo VerthashMiner -u %walletAddress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data %VerthashPath% --all-cl-devices --all-cu-devices>work.bat
 	
 ECHO.
@@ -78,7 +78,7 @@ GOTO ENDFILE
 
 :HASHALOT
 
-set /P walletAddress=Please type, or enter your Vertcoin wallet address:
+set /P walletAddress=Please type, or paste your Vertcoin wallet address:
     echo VerthashMiner -u %walletAddress% -p x -o stratum+tcp://mining.hashalot.net: --verthash-data %VerthashPath% --all-cl-devices --all-cu-devices>work.bat
 
 ECHO.
@@ -90,7 +90,7 @@ GOTO ENDFILE
 
 :SUPRNOVA
 
-set /P walletAddress=Please type, or enter your Vertcoin wallet address:
+set /P walletAddress=Please type, or paste your Vertcoin wallet address:
     echo VerthashMiner -o stratum+tcp://vtc.suprnova.cc:1777 -u %walletAddress% -p x --verthash-data %VerthashPath% --all-cu-devices --all-cl-devices>work.bat
 
 ECHO.
