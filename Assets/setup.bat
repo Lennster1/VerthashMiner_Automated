@@ -4,11 +4,14 @@ cls
 @cd /d "%~dp0"
 
 REM Checks whether verthash.dat exists in AppData\Vertcoin (if the user already have Vertcoin Core) or in current path.
+
 If exist "%AppData%\Vertcoin\verthash.dat" (
     set Verthashdat=True
     set VerthashPath="%AppData%\Vertcoin\verthash.dat"
     echo Verthash file exists! %VerthashPath%
- ) else if exist "verthash.dat" (
+ ) 
+ 
+ if exist "verthash.dat" (
     set Verthashdat=True
     set VerthashPath="verthash.dat"
     echo Verthash file exists!
