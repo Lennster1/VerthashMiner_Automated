@@ -67,34 +67,37 @@ GOTO INVALID
 :ZERGPOOL
 
 set /P walletAddress=Please type, or enter your Vertcoin wallet address:
-    echo Verthashminer -u %walletAddress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat all-cl-devices --all-cu-devices>work.bat
-    start work.bat
+    echo VerthashMiner -u %walletAddress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data %VerthashPath% --all-cl-devices --all-cu-devices>work.bat
 	
 ECHO.
 ECHO Verthashminer configured successfully.
 ECHO.
+timeout /t 5 /nobreak > nul
+start work.bat
 GOTO ENDFILE
 
 :HASHALOT
 
 set /P walletAddress=Please type, or enter your Vertcoin wallet address:
-    echo VtcZerg -u %walletAddress% -p x -o s>work.bat
-	start work.bat
+    echo VerthashMiner -u %walletAddress% -p x -o stratum+tcp://mining.hashalot.net: --verthash-data %VerthashPath% --all-cl-devices --all-cu-devices>work.bat
 
 ECHO.
 ECHO Verthashminer configured successfully.
 ECHO.
+timeout /t 5 /nobreak > nul
+start work.bat
 GOTO ENDFILE
 
 :SUPRNOVA
 
 set /P walletAddress=Please type, or enter your Vertcoin wallet address:
-    echo VtcSupr -u %walletAddress% -p x -o s>work.bat
-	start work.bat
+    echo VerthashMiner -o stratum+tcp://vtc.suprnova.cc:1777 -u %walletAddress% -p x --verthash-data %VerthashPath% --all-cu-devices --all-cl-devices>work.bat
 
 ECHO.
 ECHO Verthashminer_Automated configured successfully.
 ECHO.
+timeout /t 5 /nobreak > nul
+start work.bat
 GOTO ENDFILE
 
 :INVALID
