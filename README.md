@@ -17,7 +17,7 @@ When you  enter it, it will automatically start hashing with the adress provided
 <br>
 ## Donations
 Donations are greatly appriciated, my adresses are down below. <br>
-<br>
+<br>    
 BTC: `bc1qxngnpj42e2d0j6ej5fjpwa454kwxmlvk6kzxkg` <br>
 BCH: `qp6tj8pd4cplx0j72pzhkngekez7td7ra56ztgk335` <br>
 ETH: `0x7042742380C550c8639588F607FEa2A77BF36FFD` <br>
