@@ -1,4 +1,3 @@
-
 @ECHO OFF
 cls
 @setlocal enableextensions
@@ -19,9 +18,7 @@ If %batExists%==True (
     start work.bat
     EXIT /B
     )
-If %verthash%==False (
-	echo Verthash.dat 
-)
+
 :README
 	cls
 	ECHO.
@@ -46,7 +43,7 @@ If %verthash%==False (
 	ECHO.
 	ECHO  2 - Hashalot
 	ECHO.
-	ECHO  3 - Suprnova
+	ECHO  3 - Hashcryptos
 	ECHO.
 	ECHO  4 - Exit
 	ECHO.
@@ -54,41 +51,42 @@ If %verthash%==False (
 	set /P INPUT=Enter the option: %=%
 	IF "%INPUT%" == "1" GOTO ZERGPOOL
 	IF "%INPUT%" == "2" GOTO HASHALOT
-	IF "%INPUT%" == "3" GOTO SUPRNOVA
+	IF "%INPUT%" == "3" GOTO HASHCRYPTOS
 	IF "%INPUT%" == "4" GOTO :EOF
 
 GOTO INVALID
 
 :ZERGPOOL
 
-set /P walletAdress=What is your wallet adress?:
-    echo Verthashminer -u %walletAdress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat all-cl-devices --all-cu-devices>work.bat
-    start work.bat
-	
-ECHO.
-ECHO Verthashminer configured successfully.
+set /P walletAddress=Please type or paste your Vertcoin wallet address:
+SET /P workerName=Please enter workername, or leave empty: || SET workerName=
+
+if [%workerName%] == [] (
+  echo VerthashMiner -u %walletAddress% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat --all-cl-devices --all-cu-devices>work.bat
+) else (
+    echo VerthashMiner -u %walletAddress%.%workerName% -p c=VTC,mc=VTC -o stratum+tcp://verthash.mine.zergpool.com:4534 --verthash-data verthash.dat --all-cl-devices --all-cu-devices>work.bat
+)
+
 ECHO.
 GOTO ENDFILE
 
 :HASHALOT
 
-set /P walletAdress=What is your wallet adress?:
-    echo VtcZerg -u %walletAdress% -p x -o s>work.bat
-	start work.bat
-
-ECHO.
+set /P walletAddress=Copy/Type/Paste your wallet address here:
+    echo Verthashminer -u %usernames% -p x -o stratum+tcp://mining.hashalot.net:3950 --verthash-data verthash.dat --all-cl-devices --all-cu-devices>work.bat
 ECHO Verthashminer configured successfully.
+ECHO.
+start work.bat
 ECHO.
 GOTO ENDFILE
 
-:SUPRNOVA
+:HASHCRYPTOS
 
-set /P walletAdress=What is your wallet adress?:
-    echo VtcSupr -u %walletAdress% -p x -o s>work.bat
-	start work.bat
-
+set /P walletAddress=Copy/Type/Paste your username here:
+    echo Verthashminer -u %walletAdress% -p x -o stratum+tcp://mining.hashalot.net:3950 --verthash-data verthash.dat --all-cl-devices --all-cu-devices>work.bat
+ECHO Verthashminer configured successfully.
 ECHO.
-ECHO Verthashminer_Automated configured successfully.
+start work.bat
 ECHO.
 GOTO ENDFILE
 
